@@ -33,6 +33,18 @@ const meta: Meta<typeof Text> = {
       options: ['initial', 'upper', 'lower', 'capitalize'],
       control: { type: 'radio' },
     },
+    as: {
+      table: { disable: true },
+    },
+    html: {
+      table: { disable: true },
+    },
+    fontColor: {
+      table: { disable: true },
+    },
+    children: {
+      table: { disable: true },
+    },
   },
 };
 

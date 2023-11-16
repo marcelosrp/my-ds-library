@@ -21,6 +21,9 @@ const meta: Meta<typeof Button> = {
     children: {
       table: { disable: true },
     },
+    onClick: {
+      table: { disable: true },
+    },
   },
 };
 
