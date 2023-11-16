@@ -1,9 +1,19 @@
-import { MouseEventHandler } from 'react'
+export type ButtonStyledProps = {
+  $variant: string;
+};
+
+export type ButtonType = 'primary' | 'secondary' | 'tertiary';
+
+export type ButtonTypes = {
+  [key: string]: string;
+};
 
 export interface ButtonProps {
-  text?: string
-  primary?: boolean
-  disabled?: boolean
-  size?: 'small' | 'medium' | 'large'
-  onClick?: MouseEventHandler<HTMLButtonElement>
+  as?: React.ElementType;
+  children: React.ReactNode;
+  disabled?: boolean;
+  href?: string;
+  onClick?: () => void;
+  target?: string;
+  type: string;
 }

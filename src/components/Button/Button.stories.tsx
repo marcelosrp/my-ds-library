@@ -5,66 +5,52 @@ import Button from './Button';
 const meta: Meta<typeof Button> = {
   component: Button,
   title: 'Button',
-  argTypes: {},
+  argTypes: {
+    as: {
+      table: { disable: true },
+    },
+    href: {
+      table: { disable: true },
+    },
+    target: {
+      table: { disable: true },
+    },
+    type: {
+      table: { disable: true },
+    },
+    children: {
+      table: { disable: true },
+    },
+  },
 };
 
 export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = args => (
-  <Button data-testId="InputField-id" {...args} />
-);
+export const Primary: Story = args => <Button {...args} />;
+
 Primary.args = {
-  primary: true,
+  as: 'button',
+  children: 'Primary Button',
+  type: 'primary',
   disabled: false,
-  text: 'Primary',
 };
 
-export const Secondary: Story = args => (
-  <Button data-testId="InputField-id" {...args} />
-);
+export const Secondary: Story = args => <Button {...args} />;
+
 Secondary.args = {
-  primary: false,
+  as: 'button',
+  children: 'Secondary Button',
+  type: 'secondary',
   disabled: false,
-  text: 'Secondary',
 };
 
-export const Disabled: Story = args => (
-  <Button data-testId="InputField-id" {...args} />
-);
-Disabled.args = {
-  primary: false,
-  disabled: true,
-  text: 'Disabled',
-};
+export const Tertiary: Story = args => <Button {...args} />;
 
-export const Small: Story = args => (
-  <Button data-testId="InputField-id" {...args} />
-);
-Small.args = {
-  primary: true,
+Tertiary.args = {
+  as: 'button',
+  children: 'Tertiary Button',
+  type: 'tertiary',
   disabled: false,
-  size: 'small',
-  text: 'Small',
-};
-
-export const Medium: Story = args => (
-  <Button data-testId="InputField-id" {...args} />
-);
-Medium.args = {
-  primary: true,
-  disabled: false,
-  size: 'medium',
-  text: 'Medium',
-};
-
-export const Large: Story = args => (
-  <Button data-testId="InputField-id" {...args} />
-);
-Large.args = {
-  primary: true,
-  disabled: false,
-  size: 'large',
-  text: 'Large',
 };
