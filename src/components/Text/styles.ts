@@ -7,6 +7,7 @@ export const Text = styled.p<TextStyledProps>`
   text-transform: ${props => props.$variant};
 
   &.display-large {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 57px;
     font-weight: bold;
     line-height: 64px;
@@ -18,6 +19,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.display-medium {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 45px;
     font-weight: bold;
     line-height: 52px;
@@ -29,6 +31,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.display-small {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 36px;
     font-weight: bold;
     line-height: 44px;
@@ -40,6 +43,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.headline-large {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 32px;
     font-weight: bold;
     line-height: 40px;
@@ -51,6 +55,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.headline-medium {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 28px;
     font-weight: bold;
     line-height: 36px;
@@ -62,6 +67,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.headline-small {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 24px;
     font-weight: bold;
     line-height: 32px;
@@ -73,6 +79,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.headline-extra-small {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 26px;
@@ -84,6 +91,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.title-large {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 22px;
     font-weight: normal;
     line-height: 28px;
@@ -95,6 +103,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.title-medium {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
@@ -106,36 +115,42 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.title-small {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 20px;
   }
 
   &.title-extra-small {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
   }
 
   &.label-large {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
   }
 
   &.label-medium {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
     line-height: 20px;
   }
 
   &.label-small {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 12px;
     font-weight: bold;
     line-height: 16px;
   }
 
   &.body-extra-large {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 20px;
     font-weight: normal;
     line-height: 28px;
@@ -147,6 +162,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.body-large {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
@@ -158,6 +174,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.body-medium {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 20px;
@@ -169,6 +186,7 @@ export const Text = styled.p<TextStyledProps>`
   }
 
   &.body-small {
+    font-family: 'IBM Plex Serif', serif;
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
