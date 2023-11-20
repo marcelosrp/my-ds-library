@@ -2,14 +2,15 @@ import styled from 'styled-components';
 import { ChipStylesProps } from './Chip.types';
 
 export const Chip = styled.span<ChipStylesProps>`
-  border-radius: 4px;
-  padding: ${props => (props.$size ? '4px 8px' : '4px')};
-  background-color: ${props => props.$bgColor};
-  width: fit-content;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  background-color: ${props => props.$bgColor};
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
   gap: 4px;
+  justify-content: center;
+  padding: ${props => (props.$size ? '4px 8px' : '4px')};
+  width: fit-content;
 
   svg {
     height: 16px;

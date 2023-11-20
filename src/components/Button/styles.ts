@@ -4,6 +4,7 @@ import { ButtonStyledProps } from './Button.types';
 export const Button = styled.button<ButtonStyledProps>`
   align-items: center;
   border-radius: 3rem;
+  box-sizing: border-box;
   cursor: pointer;
   display: flex;
   justify-content: center;
