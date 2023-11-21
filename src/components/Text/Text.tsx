@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextProps, TextVariant, TextVariants } from './Text.types';
-import { GlobalStyle } from '../../styles/GlobalStyles';
+import '../../styles/style.css';
 import * as S from './styles';
 
 const TEXT_VARIANTS: TextVariants = {
@@ -48,33 +48,27 @@ const Text: React.FC<TextProps> = ({
 
   if (html) {
     return (
-      <>
-        <GlobalStyle />
-        <S.Text
-          as={as}
-          className={className}
-          dangerouslySetInnerHTML={{
-            __html: children,
-          }}
-          $color={fontColor}
-          $variant={TEXT_VARIANTS[variant as TextVariant]}
-        />
-      </>
+      <S.Text
+        as={as}
+        className={className}
+        dangerouslySetInnerHTML={{
+          __html: children,
+        }}
+        $color={fontColor}
+        $variant={TEXT_VARIANTS[variant as TextVariant]}
+      />
     );
   }
 
   return (
-    <>
-      <GlobalStyle />
-      <S.Text
-        as={as}
-        className={className}
-        $color={fontColor}
-        $variant={TEXT_VARIANTS[variant as TextVariant]}
-      >
-        {children}
-      </S.Text>
-    </>
+    <S.Text
+      as={as}
+      className={className}
+      $color={fontColor}
+      $variant={TEXT_VARIANTS[variant as TextVariant]}
+    >
+      {children}
+    </S.Text>
   );
 };
 

@@ -4,6 +4,8 @@ import { TextStyledProps } from './Text.types';
 
 export const Text = styled.p<TextStyledProps>`
   color: ${props => props.$color};
+  margin: 0;
+  padding: 0;
   text-transform: ${props => props.$variant};
 
   &.display-large {
